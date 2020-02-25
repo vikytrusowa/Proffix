@@ -1,0 +1,2 @@
+$(document).ready(function(){document.getElementById("map")&&ymaps.ready(function(){var o=new ymaps.Map("map",{center:[48.486582,135.105758],zoom:15});o.controls.remove("zoomControl"),o.controls.remove("rulerControl"),o.controls.remove("geolocationControl"),o.controls.remove("routeButtonControl"),o.controls.remove("trafficControl"),o.controls.remove("typeSelector"),o.controls.remove("fullscreenControl"),o.controls.remove("searchControl");var e=new ymaps.Placemark(o.getCenter(),{});o.geoObjects.add(e)})});
+

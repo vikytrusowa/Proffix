@@ -1,0 +1,43 @@
+.image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.button {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #272727;
+  padding: 10px 40px;
+  &:hover {
+    text-decoration: none;
+    color: #000000;
+    background: #FCBB14;
+  }
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+  color: #272727;
+  margin: 0 auto 70px;
+  position: relative;
+  text-align: center;
+  &:after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    width: 76px;
+    border-bottom: 4px solid #FCBB14;
+  }
+}

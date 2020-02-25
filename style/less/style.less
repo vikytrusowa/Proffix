@@ -1,0 +1,413 @@
+@import "utils/mixin";
+@import "home";
+@import "window";
+@import "balconies";
+
+//media
+
+@media screen and (max-width: 1400px) {
+  .projects__next {
+    right: -3%;
+  }
+
+  .projects__prev {
+    left: -3%;
+  }
+
+  .projects__slider {
+    padding: 0 0 0 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .projects__info {
+    padding: 10px 15px 0;
+  }
+
+  .projects__next {
+    right: -2%;
+    width: 45px;
+    height: 45px;
+  }
+
+  .projects__prev {
+    left: -2%;
+    width: 45px;
+    height: 45px;
+  }
+
+  .profiles__text {
+    padding: 0 10%;
+  }
+
+  .balconies-engineer__info {
+    padding: 2% 2%;
+    margin-left: 50%;
+  }
+
+  .example__name {
+    font-size: 19px;
+  }
+
+  .mounting__info {
+    padding-left: 15px;
+  }
+
+  .mounting__box {
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .projects__prev {
+    left: -4%;
+  }
+
+  .projects__next {
+    right: -4%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header__address,
+  .header__telephone {
+    display: none;
+  }
+
+  .header__collapse {
+    position: absolute;
+    left: 0;
+    height: auto;
+    width: 100%;
+    border-top: 1px solid #c58e00;
+    z-index: 999;
+    top: 100%;
+    background: #FCBB14;
+  }
+
+  .header__phone {
+    display: block;
+    text-align: right;
+    padding: 0;
+  }
+
+  .comfort__content {
+    margin-left: 45%;
+  }
+
+  .header__heading {
+    justify-content: space-between;
+  }
+
+  .comfort__wrap {
+    padding: 100px 0 100px;
+  }
+
+  .comfort__title {
+    font-size: 30px;
+  }
+
+  .header__menu {
+    padding: 15px;
+  }
+
+  .header__navigation .header__menu .header__item {
+    border-bottom: 1px solid #ffd979;
+    padding-left: 10px;
+  }
+
+  .questions__treatment {
+    margin-bottom: 1rem;
+  }
+
+  .window__info {
+    padding: 5% 2%;
+  }
+
+  .engineer__info {
+    padding: 0 2%;
+  }
+
+  .example__price {
+    font-size: 25px;
+  }
+
+  .engineer__text {
+    font-size: 30px;
+  }
+
+  .stages__list {
+    justify-content: center;
+  }
+
+  .stages__item:not(:last-child):after {
+    right: 0;
+  }
+
+  .work__item {
+    flex-direction: column;
+  }
+
+  .work__inner {
+    text-align: center;
+  }
+
+  .work__image {
+    margin-bottom: 30px;
+  }
+
+  .glazing__inner {
+    flex-direction: column;
+  }
+
+  .glazing__picture {
+    height: 185px;
+  }
+
+  .example__picture {
+    height: 297px;
+  }
+
+  .questions__button {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .header__logo--image {
+    margin: 0 auto;
+  }
+
+  .header__heading {
+    padding: 25px 15px;
+    justify-content: space-between;
+  }
+
+  .comfort__wrap {
+    background-position: right;
+  }
+
+  .comfort__content {
+    margin-left: 30%;
+  }
+
+  .setting__element {
+    margin-bottom: 50px;
+  }
+
+  .questions__form {
+    padding: 0 15px;
+  }
+
+  .questions__name {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .glazing__picture {
+    height: auto;
+  }
+
+  .glazing__element {
+    margin-bottom: 30px;
+  }
+
+  .balconies-engineer__info {
+    margin-left: 0;
+  }
+
+  .balconies-engineer__wrap {
+    background-position: right;
+  }
+
+  .example__item {
+    margin-bottom: 60px;
+  }
+
+  .example__picture {
+    height: auto;
+  }
+
+  .projects__indicators {
+    display: flex;
+  }
+
+  .projects__prev,
+  .projects__next {
+    display: none;
+  }
+
+  .modal__button {
+    margin: 0 auto 20px;
+  }
+
+  .mounting__box,
+  .mounting__wrap {
+    transform: scale(1, -1);
+  }
+
+  .mounting__image {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header__button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .header__telephone {
+    font-size: 14px;
+    &--bold {
+      font-size: 16px;
+    }
+  }
+  .header__heading {
+    padding: 25px 15px;
+  }
+
+  .header__navigation {
+    padding: 10px 10px;
+  }
+
+  .header__navigation .header__menu .header__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .comfort__content {
+    margin-left: 0;
+  }
+
+  .advantages__icon {
+    margin-right: 18px;
+    &--small {
+      margin-right: 30px;
+    }
+    &--big {
+      margin-right: 10px;
+    }
+  }
+
+  .projects__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects__review {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .stages__list {
+    justify-content: space-around;
+  }
+
+  .stages__item:not(:last-child):after {
+    right: 10px;
+  }
+
+  .stages__picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  .comfort__content {
+    text-align: center;
+  }
+
+  .window__info,
+  .engineer__info,
+  .balconies-engineer__info {
+    text-align: center;
+  }
+
+  .advantages {
+    padding: 50px 0 25px;
+  }
+
+  .title {
+    font-size: 30px;
+    margin: 0 auto 30px;
+  }
+
+  .setting__text {
+    font-size: 20px;
+  }
+
+  .setting {
+    padding: 20px 0 50px;
+  }
+
+  .projects__name {
+    font-size: 20px;
+  }
+
+  .questions {
+    padding: 35px 0 0;
+  }
+
+  .questions__map {
+    height: 350px;
+  }
+
+  .example {
+    padding: 27px 0 20px;
+  }
+
+  .mounting__name {
+    font-size: 23px;
+  }
+
+  .mounting__inner {
+    margin-bottom: 30px;
+  }
+
+  .profiles__inner {
+    margin-bottom: 35px;
+  }
+
+  .profiles {
+    padding: 35px 0;
+  }
+
+  .engineer {
+    padding: 40px 0;
+  }
+
+  .payment {
+    padding: 35px 0;
+  }
+
+  .balconies {
+    margin-top: 0;
+  }
+
+  .work {
+    padding: 33px 0;
+  }
+
+  .work__item {
+    margin-bottom: 20px;
+  }
+
+  .glazing {
+    padding: 40px 0;
+  }
+
+  .balconies-profile {
+    padding: 40px 0;
+  }
+
+  .balconies-engineer {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .comfort__wrap {
+    padding: 50px 0 50px;
+  }
+}

@@ -1,0 +1,8 @@
+User-agent: Yandex
+Disallow: /Proffix/
+
+User-agent: GoogleBot
+Disallow: /Proffix/
+
+User-agent: *
+Disallow: /Proffix/
